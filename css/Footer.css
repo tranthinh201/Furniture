@@ -1,0 +1,56 @@
+/* footer */
+
+.footer {
+    height: 300px;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 18px; 
+    padding: 60px;
+    margin-top: 40px;
+}
+
+.footer > .row1 a, .row2 a{
+   color: black;
+   text-decoration: none;
+   padding: 6px;
+    font-size: 20px;
+}
+
+.footer > .row1 a:hover, .row2 a:hover {
+    color: red;
+}
+
+.footer >.row2 {
+    padding: 30px;
+    font-size: 18px;
+}
+
+.footer >.social {
+    font-size: 38px;
+}
+
+.footer > .social a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer > .social > .social-face {
+    color: #607fbe;
+}
+
+
+.footer > .social > .social-insta {
+    color: rgb(246, 13, 1);
+}
+
+
+.footer > .social > .social-youtube {
+    color: red;
+}
+
+.footer > .copyright{
+    font-size: 18px;
+    color: gray;
+    margin-top: 20px;
+}
+

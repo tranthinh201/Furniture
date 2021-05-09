@@ -1,0 +1,120 @@
+.header__page {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    font-size: 24px;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+}
+
+.header__page > .nav__logo {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.header__page > .nav__list-menu > .list-icon {
+   display: flex;
+}
+
+.nav__list-menu, .list-menu  {
+    display: flex;
+}
+
+.header__page > .nav__list-menu > .list-icon a {
+    color: black;
+    padding-left: 12px;
+}
+
+.header__page > .nav__list-menu > .list-icon {
+    margin-left: 60px;
+}
+
+.header__page > .nav__list-menu > .list-icon i:hover {
+    color: red;
+}
+
+/* .nav-search {
+    width: 100%;
+    height: 100px;
+    padding-top: 180px;
+    text-align: center;
+} */
+
+/* .nav-search input{
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    
+} */
+
+
+.header__page > .nav__list-menu > .list-menu li{
+    list-style: none;
+}
+
+
+.header__page > .nav__list-menu > .list-menu li a {
+    text-decoration: none;
+    padding-left: 40px;
+    color: black;
+    cursor: pointer;
+}
+
+.header__page > .nav__list-menu > .list-menu li a:hover {
+    color: #9D0E01
+}
+
+.header__page  .nav__list-menu  .list-menu  li:hover > ul {
+    background-color: rgb(255, 255, 255);
+    top: 65px;
+    visibility: visible;
+    opacity: 0.9;
+}
+
+
+.header__page > .nav__list-menu > .list-menu .li > .list-menu-drop li:hover {
+    color: #9D0E01;
+    transform: translateX(10px);
+    transition: all 900ms ease-out;
+}
+
+.header__page > .nav__list-menu > .list-menu li > .list-menu-drop{
+    width: 250px;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    font-size: 18px;
+    line-height: 20px;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 30%);
+    opacity: 0;
+    visibility: hidden;
+    transition: top .8s;
+}
+
+.header__page > .nav__list-menu > .list-menu li > .list-menu-drop::before {
+    content: "";
+    width: 70px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -40px;
+}
+
+.header__page > .nav__list-menu > .list-menu li > .list-menu-drop li {
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(228, 227, 227);
+    text-align: left;   
+}
+
+@media screen and (max-width: 416px) {
+    .nav__list-menu .list-menu{
+        display: none;
+    }
+
+}
