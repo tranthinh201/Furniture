@@ -8,6 +8,37 @@
     padding: 40px 0;
 }
 
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+.search-bar-1 {
+    padding: 20px 30px;
+    background: #dfe6e9;
+    border-radius: 2px;
+}
+
+.search-bar-1 span {
+    font-size: 22px;
+    font-weight: 100;
+    color: black;
+}
+.search-bar-1 select {
+    font-size: 18px;
+    padding: 6px 8px;
+    outline: none;
+    margin-left: 10px;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.712);
+    background-color: #dfe6e9;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
+                0 2px 2px rgba(0,0,0,0.12), 
+                0 4px 4px rgba(0,0,0,0.16);
+}
+
 .list-product-promotion {
     display: flex;
     padding: 20px;
@@ -55,8 +86,7 @@
     transition: 0.6s linear;
     box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
                 0 2px 2px rgba(0,0,0,0.12), 
-                0 4px 4px rgba(0,0,0,0.16), 
-                0 8px 8px rgba(0,0,0,0.20);
+                0 4px 4px rgba(0,0,0,0.16);
 }
 
 .product-promotion-infor-1:hover
@@ -121,6 +151,7 @@
     padding: 10px 20px;
 }
 
+
 @media screen and (max-width: 416px) {
     .product-promotion-infor-1 {
         width: 260px;
@@ -158,7 +189,7 @@
         top: 40px;
         left: 40px;
     }
-    
+     
     .sale-off img {
         height: 30px;
     }

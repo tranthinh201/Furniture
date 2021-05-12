@@ -18,7 +18,7 @@ function init() {
     */
 
   slideImage.forEach((img, i) => {
-    img.style.left = i * 101 + "%";
+    img.style.left = i * 100 + "%";
   });
 
   slideImage[0].classList.add("active");
@@ -34,7 +34,7 @@ function init() {
     */
 
   slideImage.forEach((img, i) => {
-    img.style.left = i * 102 + "%";
+    img.style.left = i * 100 + "%";
   });
 
   slideImage[0].classList.add("active");
@@ -113,4 +113,5 @@ function setActiveClass() {
   currentDot.classList.remove("active");
   navigationDots.children[currentSlide].classList.add("active");
 }
+
 
