@@ -114,4 +114,17 @@ function setActiveClass() {
   navigationDots.children[currentSlide].classList.add("active");
 }
 
+// Back top
+
+function goToTop() {
+  var timer = setInterval(function() {
+    document.documentElement.scrollTop -= 20;
+
+    if(document.documentElement.scrollTop <= 0) {
+      clearInterval(timer);
+    }
+  }, 5);
+}
+
+
 

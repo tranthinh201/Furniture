@@ -15,28 +15,68 @@
     height: 160px;
 }
 
-.search-bar-1 {
+.search-bar_nw {
+    display: grid;
     padding: 20px 30px;
     background: #dfe6e9;
-    border-radius: 2px;
 }
 
-.search-bar-1 span {
-    font-size: 22px;
+.search-bar_nw span {
+    font-size: 18px;
     font-weight: 100;
     color: black;
+    margin-bottom: 12px;
+    
 }
-.search-bar-1 select {
-    font-size: 18px;
+.search-bar_nw select {
+    font-size: 16px;
     padding: 6px 8px;
     outline: none;
     margin-left: 10px;
-    border: none;
-    border: 1px solid rgba(255, 255, 255, 0.712);
     background-color: #dfe6e9;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
-                0 2px 2px rgba(0,0,0,0.12), 
-                0 4px 4px rgba(0,0,0,0.16);
+}
+
+.search-bar__return {
+    display: flex;
+    height: 113px;
+    font-size: 20px;  
+}
+
+.search-bar__return .return {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    border-left: 1px solid #333;
+    padding: 19px 40px;
+}
+
+.search-bar__return .return p {
+    font-weight: 100;
+    cursor: context-menu;
+}
+
+.search-bar__return .return:hover {
+    color: red;
+}
+
+.search-bar__return .return i {
+    margin-right: 8px;
+}
+
+.search-bar__return .search-bar-nw {
+    background-color: #344a53;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 0 30px;
+}
+
+.search-bar__return .search-bar-nw:hover {
+    background-color: #d63031;
 }
 
 .list-product-promotion {
@@ -52,6 +92,7 @@
     padding: 100px 0;
     position: relative;
     background-color: whitesmoke;
+    transition: all .1s ease;
 }
 
 .product-promotion-infor-1 .div-text .tiltle-product, .price{
@@ -83,10 +124,7 @@
 }
 
 .product-promotion-infor-1:hover {
-    transition: 0.6s linear;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
-                0 2px 2px rgba(0,0,0,0.12), 
-                0 4px 4px rgba(0,0,0,0.16);
+    box-shadow: 0 2px 24px rgb(0 0 0 / 25%);
 }
 
 .product-promotion-infor-1:hover
@@ -125,6 +163,7 @@
     position: absolute;
     top: 30px;
     left: 70px;
+    box-shadow: 1px 1px 1px 1px rgb(214, 141, 141);
 }
 
 .sale-off img {
@@ -140,7 +179,6 @@
     transition: 0.6s linear;
     opacity: 0;
     visibility: hidden;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
 }
 
 .button-buy a {

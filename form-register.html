@@ -14,29 +14,77 @@
 <body>
     <div class="header__page">
         <div class="nav__logo">
-            THINHJ
+            <img src="./img/LOGO_TEAM_NEW.png" alt="Logo Team">
         </div>
         <div class="nav__list-menu">
-            <div class="list-menu">
+            <ul class="list-menu">
                 <li><a href="./index.html">Trang Chủ</a></li>
-                <li><a href="#">Sản Phẩm</a></li>
+                <li>
+                    <a href="#">Sản Phẩm</a>
+                    <ul class="list-menu-drop">
+                        <li>
+                            <div>
+                                <a href="./news.html">Bàn</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="./living-space.html">Giường</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="./promotion.html">Ghế</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="./promotion.html">Tivi</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="./promotion.html">Tủ Lạnh</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Catalogue</a></li>
                 <li>
                     <a href="#">Tin Tức</a>
                     <ul class="list-menu-drop">
-                        <li><a href="./news.html">Tin Tức</a></li>
-                        <li><a href="./living-space.html">Không Gian Sống</a></li>
-                        <li><a href="./promotion.html">Khuyến Mại</a></li>
+                        <li>
+                            <div>
+                                <a href="./news.html">Tin Tức</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="./living-space.html">Không Gian Sống</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="./promotion.html">Khuyến Mại</a>
+                            </div>
+                        </li>
                     </ul>
                 </li>
                 <li><a href="./contact.html">Liên Hệ</a></li>
-            </div>
+            </ul>
             <div class="list-icon">
                 <a href="#"><i class="fas fa-search"></i></a>
                 <a href="./account.html"><i class="far fa-user"></i></a>
                 <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#" class="shopping-cart-a">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="shopping-cart">
+                        <p>Tổng:200.000VND</p>
+                        <button onclick="location.href='./cart.html'" type="button">Xem giỏ hàng</button>
+                    </div>
+                </a>
             </div>
-        </div>
+        </div> 
     </div>
 
     <div class="form-register">
@@ -140,7 +188,7 @@
         </div>
 
         <div class="copyright">
-            <span>© Trần Văn Thịnh 2021</span> 
+            <span>© HTN Team 2021</span> 
         </div>
     </div>
 </body>

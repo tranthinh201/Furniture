@@ -7,55 +7,92 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link rel="shorcut icon" type="image/png" href="./img/best-logo.png">
+    <link rel="shorcut icon" type="image/png" href="./img/ICON+PAGE.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <title>Trang chủ</title>
 </head>
 <body>
-    <div class="header__page">
-        <div class="nav__logo">
-            THINHJ
-        </div>
-        <div class="nav__list-menu">
-            <ul class="list-menu">
-                <li><a href="./index.html">Trang Chủ</a></li>
-                <li><a href="#">Sản Phẩm</a></li>
+  <div class="header__page">
+    <div class="nav__logo">
+        <img src="./img/LOGO_TEAM_NEW.png" alt="Logo Team">
+    </div>
+    <div class="nav__list-menu">
+        <ul class="list-menu">
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li>
+                <a href="#">Sản Phẩm</a>
+                <ul class="list-menu-drop">
+                    <li>
+                        <div>
+                            <a href="./tabban.html">Bàn</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./tabghe.html">Ghế</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./tabsofa.html">SOFA</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./promotion.html">Tivi</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./promotion.html">Tủ Lạnh</a>
+                        </div>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Catalogue</a></li>
                 <li>
                     <a href="#">Tin Tức</a>
                     <ul class="list-menu-drop">
                         <li>
                             <div>
-                              <a href="./news.html">Tin Tức</a>
+                                <a href="./news.html">Tin Tức</a>
                             </div>
                         </li>
-
                         <li>
-                          <div>
-                            <a href="./living-space.html">Không Gian Sống</a>
-                          </div>
+                            <div>
+                                <a href="./living-space.html">Không Gian Sống</a>
+                            </div>
                         </li>
-
                         <li>
-                          <div>
-                            <a href="./promotion.html">Khuyến Mại</a>
-                          </div>
+                            <div>
+                                <a href="./promotion.html">Khuyến Mại</a>
+                            </div>
                         </li>
                     </ul>
                 </li>
-                <li><a href="./contact.html">Liên Hệ</a></li>
-            </ul>
-            <div class="list-icon">
-                <div class="search-bar">
-                  <a href="#"><i class="fas fa-search"></i></a>
-                </div>
-                <a href="./account.html"><i class="far fa-user"></i></a>
-                <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                <li>
-                  <i class="fas fa-bars menu-bar"></i>
-                </li>
-            </div>
+            <li><a href="./contact.html">Liên Hệ</a></li>
+        </ul>
+    <div class="list-icon">
+        <div class="search-bar">
+            <a href="#"><i class="fas fa-search"></i></a>
         </div>
+        <a href="./account.html"><i class="far fa-user"></i></a>
+        <a href="#"><i class="far fa-heart"></i></a>
+        <a href="#" class="shopping-cart-a">
+            <i class="fas fa-shopping-cart"></i>
+                <!-- <div class="square-up">
+                    <i class="far fa-caret-square-up"></i>
+                </div> -->
+            <div class="shopping-cart">
+                <p>Tổng:200.000VND</p>
+                <button onclick="location.href='./cart.html'" type="button">Xem giỏ hàng</button>
+            </div>
+        </a>
+        <li>
+            <i class="fas fa-bars menu-bar"></i>
+        </li>
+    </div>
+</div>
         
     </div>
       <div class="wrapper">
@@ -63,18 +100,24 @@
 
           <div class="slides-container">
             <div class="slide-image">
-                <img class="owl-lazy" src="https://aconcept-vn.com/storage/media/FREzYWr9tlyZOOOLSemwj0BKGqm7UB9IoyKd4N9S.png" alt="Khám phá"/> 
-                <a href="#" class="btn-link">Khám phá</a>
+                <img class="owl-lazy" src="./img/Slide.jpg" alt="Khám phá"/> 
+                <a href="#" class="btn-link">Mua ngay</a>
+                <p class="infor-img">
+                  SOFA
+                </p>
             </div>
 
             <div class="slide-image">
-                <img class="owl-lazy" src="https://aconcept-vn.com/storage/media/FREzYWr9tlyZOOOLSemwj0BKGqm7UB9IoyKd4N9S.png" alt="Khám phá"/>
-                <a href="#" class="btn-link">Khám phá</a>
+                <img class="owl-lazy" src="./img/new-bed.jpg" alt="Mua ngay"/>
+                <a href="#" class="btn-link">Mua ngay</a>
+                <p class="infor-img">
+                  GIƯỜNG
+                </p>
             </div>
 
             <div class="slide-image">
-                <img class="owl-lazy" src="https://aconcept-vn.com/storage/media/FREzYWr9tlyZOOOLSemwj0BKGqm7UB9IoyKd4N9S.png" alt="Khám phá"/>
-                <a href="#" class="btn-link">Khám phá</a>
+                <img class="owl-lazy" src="./img/Slide.jpg" alt="Mua ngay"/>
+                <a href="#" class="btn-link">Mua ngay</a>
             </div>
           </div>
 
@@ -88,7 +131,7 @@
 
       <div class="product">
         <div class="product-view product-1">
-          <img src="https://aconcept-vn.com/storage/media/y77qYGuYzIhIm0qEgynsd6DvnocF2tt5zKKbElI4.jpeg" alt="">
+          <img src="./img/Sofa-demo.jpg" alt="">
             <div class="product-see-more">
               <h2 class="name-product">
                 SOFA
@@ -102,7 +145,7 @@
             </div>
         </div>
         <div class="product-view product-2">
-          <img src="https://aconcept-vn.com/storage/media/Nu1zwv6IoDK107yLCKl6SwRPeVAXwc0BDXznrpA3.jpeg" alt="">
+          <img src="./img/kari-shea-AMyjxxLEHU4-unsplash.jpg" alt="">
           <div class="product-see-more">
             <h2 class="name-product">
               Ghế
@@ -116,7 +159,7 @@
           </div>
         </div>
         <div class="product-view product-3">
-          <img src="//aconcept-vn.com/storage/media/S5fBMaOsCCJV6caIBq4SvTRkwtA1nOHv3c7CEqRU.jpeg" alt="">
+          <img src="./img/table-demo.jpg" alt="">
           <div class="product-see-more">
             <h2 class="name-product">
               Bàn
@@ -130,7 +173,7 @@
           </div>
         </div>
         <div class="product-view product-4">
-          <img src="https://aconcept-vn.com/storage/media/sJd48SsIRDkP6IOsHTiP6bIIynlg4aueoMVtuL9v.jpeg" alt="">
+          <img src="./img/bed-demo.jpg" alt="">
           <div class="product-see-more">
             <h2 class="name-product">
               Giường
@@ -146,46 +189,28 @@
       </div>
 
 
-      <div class="block-single-1">
-        <div class="block-container">
-          <div class="block-left">
-            <h4>Giới thiệu về</h4>
-            <h1>ThinhJ</h1>
-            <p>Việc ra đời của ThinhJ là cả quá trình đúc kết, tìm hiểu về đặc thù của từng loại không gian và các xu hướng sở thích khác nhau từ người sử dụng. Những nghiên cứu kỹ lưỡng đó được kết hợp khéo léo cùng tài năng của các nhà thiết kế nổi tiếng Châu Âu, tạo nên dòng sản phẩm trang trí, đồ nội thất đẹp có độ ứng dụng cao với nhiều loại hình không gian khác nhau. Gần gũi và ấm cúng cho nhà ở; cởi mở và thời trang cho khách sạn; chuyên nghiệp, năng động khi sử dụng cho văn phòng... phong thái từ các thiết kế của ThinhJ luôn tạo được sức hút bởi tính đa chiều trong cảm xúc mà chúng mang lại cho không gian.</p>
-            <div class="sec-more efch-5 ef-tx-t">
-              <a class="readmore" href="#">
-                  Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
-              </a>
-          </div>
-          </div>
+      <div class="blog-single-1">
+          <div class="blog-container">
+            <div class="blog-left">
+                <h4>Giới thiệu về</h4>
+                <h1>HTN Team</h1>
+                <p>Việc ra đời của <b>HTN Team</b> là cả quá trình đúc kết, tìm hiểu về đặc thù của từng loại không gian và các xu hướng sở thích khác nhau từ người sử dụng. Những nghiên cứu kỹ lưỡng đó được kết hợp khéo léo cùng tài năng của các nhà thiết kế nổi tiếng Châu Âu, tạo nên dòng sản phẩm trang trí, đồ nội thất đẹp có độ ứng dụng cao với nhiều loại hình không gian khác nhau. Gần gũi và ấm cúng cho nhà ở; cởi mở và thời trang cho khách sạn, năng động khi sử dụng cho văn phòng, phong thái từ các thiết kế của <b>HTN Team</b> luôn tạo được sức hút bởi tính đa chiều trong cảm xúc mà chúng mang lại cho không gian.</p>
+                <div class="sec-more efch-5 ef-tx-t">
+                  <a class="readmore" href="#">
+                      Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+            </div>
 
-          <div class="block-image">
-            <img src="https://aconcept-vn.com/storage/media/ZKhtw6rLLP8UWnTT90ihQE172RetZDB4tHbtVM7W.jpeg" alt="">
+            <div class="blog-image">
+                <img src="https://aconcept-vn.com/storage/media/ZKhtw6rLLP8UWnTT90ihQE172RetZDB4tHbtVM7W.jpeg" alt="">
+            </div>
           </div>
-        </div>
       </div>
-
-      <!-- <div class="block-single-2">
-        <div class="block-container-2">
-          <div class="block-image-2">
-            <img src="https://aconcept-vn.com/storage/media/FLlVTvseHbut9USG8Bpnn3bNTokzwQAviMNgHWiL.jpeg" alt="">
-          </div>
-
-          <div class="block-right">
-            <h4>KHÔNG GIAN SỐNG BẮC ÂU</h4>
-            <h1>Scandinavian style</h1>
-            <p>Đất nước Đan Mạch ghi dấu trong mọi lĩnh vực từ nghệ thuật, kiến trúc, khoa học công nghệ, bề dày lịch sử cho đến phúc lợi xã hội. Những thành tựu đó đã tạo nên nền tảng vững chắc để đảm bảo cho nhịp sống thanh bình, biết trân trọng các giá trị chân thực và luôn sáng tạo để mang đến những điều tốt đẹp cho cuộc sống. Đặc biệt hơn nữa, yếu tố tinh thần này luôn thể hiện rõ nét trong từng góc sống, từng tổ ấm của người dân nơi đây.Đất nước Đan Mạch ghi dấu trong mọi lĩnh vực từ nghệ thuật, kiến trúc, khoa học công nghệ, bề dày lịch sử cho đến phúc lợi xã hội. Những thành tựu đó đã tạo nên nền tảng vững chắc để đảm bảo cho nhịp sống thanh bình, biết trân trọng các giá trị chân thực và luôn sáng tạo để mang đến những điều tốt đẹp cho cuộc sống.</p>
-            <div class="sec-more efch-5 ef-tx-t">
-              <a class="readmore" href="#">
-                  Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
-              </a>
-          </div>
-        </div>
-      </div> -->
 
       <div class="register">
           <div class="icon-email">
-            <i class="fas fa-envelope"></i>
+            <img src="./img/gmail.svg" alt="Ảnh email">
           </div>
           <h1>Đăng ký để nhận ưu đãi hấp dẫn tại HTN</h1>
           <div class="register-email">
@@ -211,11 +236,17 @@
         <div class="social">
             <a href="https://www.facebook.com/" class="social-face"><i class="fab fa-facebook-square"></i></a>
             <a href="https://www.instagram.com/" class="social-insta"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/watch?v=Zzn9-ATB9aU&ab_channel=Ho%C3%A0ngD%C5%A9ng" class="social-youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.youtube.com/" class="social-youtube"><i class="fab fa-youtube"></i></a>
         </div>
 
         <div class="copyright">
-            <span>© Trần Văn Thịnh 2021</span> 
+            <span>© HTN Team 2021</span> 
+        </div>
+
+        <div class="div-backtop">
+          <div class="backtop" id="backtop" onclick="goToTop()">
+            <i class="fas fa-angle-up"></i>
+          </div>
         </div>
       </div>
 </body>
