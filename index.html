@@ -12,14 +12,14 @@
     <title>Trang chủ</title>
 </head>
 <body>
-  <div class="header__page">
+<div class="header__page">
     <div class="nav__logo">
-        <img src="./img/LOGO_TEAM_NEW.png" alt="Logo Team">
+        <a href="./index.html"><img src="./img/LOGO_TEAM_NEW.png" alt="Logo Team"></a>
     </div>
     <div class="nav__list-menu">
         <ul class="list-menu">
-            <li><a href="./index.html">Trang Chủ</a></li>
-            <li>
+            <li class="hv-bot"><a href="./index.html"  id="underline">Trang Chủ</a></li>
+            <li class="hv-bot">
                 <a href="#">Sản Phẩm</a>
                 <ul class="list-menu-drop">
                     <li>
@@ -39,18 +39,24 @@
                     </li>
                     <li>
                         <div>
-                            <a href="./promotion.html">Tivi</a>
+                            <a href="./tabtu.html">Tủ</a>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <a href="./promotion.html">Tủ Lạnh</a>
+                            <a href="./tabgiuong.html">Giường</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./tabdtt.html">Đồ trang trí</a>
                         </div>
                     </li>
                 </ul>
                 </li>
-                <li><a href="#">Catalogue</a></li>
-                <li>
+                <li class="hv-bot"><a href="#">Catalogue</a></li>
+                    <li class="hv-bot"><a href="./tabduan.html">Dự án</a></li>
+                <li class="hv-bot">
                     <a href="#">Tin Tức</a>
                     <ul class="list-menu-drop">
                         <li>
@@ -68,9 +74,9 @@
                                 <a href="./promotion.html">Khuyến Mại</a>
                             </div>
                         </li>
-                    </ul>
+                    </ul>check_menu
                 </li>
-            <li><a href="./contact.html">Liên Hệ</a></li>
+            <li class="hv-bot"><a href="./contact.html">Liên Hệ</a></li>
         </ul>
     <div class="list-icon">
         <div class="search-bar">
@@ -78,7 +84,7 @@
         </div>
         <a href="./account.html"><i class="far fa-user"></i></a>
         <a href="#"><i class="far fa-heart"></i></a>
-        <a href="#" class="shopping-cart-a">
+        <a href="./cart.html" class="shopping-cart-a">
             <i class="fas fa-shopping-cart"></i>
                 <!-- <div class="square-up">
                     <i class="far fa-caret-square-up"></i>
@@ -88,138 +94,218 @@
                 <button onclick="location.href='./cart.html'" type="button">Xem giỏ hàng</button>
             </div>
         </a>
+        <label for="check__hidden"></label>
         <li>
+          <label for="check__hidden">
             <i class="fas fa-bars menu-bar"></i>
+          </label>
         </li>
     </div>
 </div>
-        
+
+<input type="checkbox" name="" id="check__hidden">
+    <div class="sidebar">
+        <ul class="list-menu-mobile">
+        <li><a href="./index.html">Trang Chủ</a></li>
+        <li>
+            <a href="#">Sản Phẩm</a>
+            <label for="check_menu_nw" class="check_menu-drop"><i class="fas fa-chevron-down"></i></label>
+                <input type="checkbox" id="check_menu_nw">
+            <ul class="list-menu-drop-mobile">
+                <li>
+                    <div>
+                        <a href="./news.html">Bàn</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./living-space.html">Ghê</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./promotion.html">Sofa</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./promotion.html">Tủ</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./promotion.html">Giường</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./promotion.html">Đồ tang trí</a>
+                    </div>
+                </li>
+            </ul>
+            </li>
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="./tabduan.html">Dự án</a></li>
+            <li>
+                <a href="#">Tin Tức</a>
+                <label for="check_menu" class="check_menu-drop"><i class="fas fa-chevron-down"></i></label>
+                <input type="checkbox" id="check_menu">
+                <ul class="list-menu-drop-mobile">
+                    <li>
+                        <div>
+                            <a href="./news.html">Tin Tức</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./living-space.html">Không Gian Sống</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./promotion.html">Khuyến Mại</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Liên Hệ</a></li>
+        </ul>
     </div>
-      <div class="wrapper">
-          <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+</div>
 
-          <div class="slides-container">
-            <div class="slide-image">
-                <img class="owl-lazy" src="./img/Slide.jpg" alt="Khám phá"/> 
-                <a href="#" class="btn-link">Mua ngay</a>
-                <p class="infor-img">
-                  SOFA
-                </p>
-            </div>
+    
+<div class="slideshow-container">
 
-            <div class="slide-image">
-                <img class="owl-lazy" src="./img/new-bed.jpg" alt="Mua ngay"/>
-                <a href="#" class="btn-link">Mua ngay</a>
-                <p class="infor-img">
-                  GIƯỜNG
-                </p>
-            </div>
+    <div class="mySlides fade">
+        <img src="./img/SLIDE_1.jpeg" style="width:100%">
+        <div class="text"><span>GIẢM GIÁ 5% KHI MUA SOFA</span></div>
+        <div class="mySLides__buy">
+            <a href="./tabban.html">MUA NGAY</a>
+        </div>
+    </div>
+        
+    <div class="mySlides fade">
+        <img src="./img/SLIDE_2.jpeg" style="width:100%">
+        <div class="text"><span>GIẢM ĐẾN 20% KHI MUA THEO COMBO</span> </div>
+        <div class="mySLides__buy">
+            <a href="./tabban.html">MUA NGAY</a>
+        </div>
+    </div>
+        
+    <div class="mySlides fade">
+        <img src="./img/SLIDE_3.jpeg" style="width:100%">
+        <div class="text"><span>GIẢM 20% KHI MUA THEO BỘ</span></div>
+        <div class="mySLides__buy">
+            <a href="./tabban.html">MUA NGAY</a>
+        </div>
+    </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+</div>
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
 
-            <div class="slide-image">
-                <img class="owl-lazy" src="./img/Slide.jpg" alt="Mua ngay"/>
-                <a href="#" class="btn-link">Mua ngay</a>
-            </div>
-          </div>
-
-          <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
-      </div>
-
-      <div class="navigation-dots"></div>
-
-      <script src="./Javascript/main.js"></script>
+        <script src="./Javascript/main.js"></script>
 
 
-      <div class="product">
-        <div class="product-view product-1">
-          <img src="./img/Sofa-demo.jpg" alt="">
+        <div class="product">
+            <div class="product-view product-1">
+            <img src="./img/IMAGE_SOFA.jpeg" alt="">
             <div class="product-see-more">
-              <h2 class="name-product">
-                SOFA
-              </h2>
-              <p><a href="#">Xem thêm</a></p>
+                <h2 class="name-product">
+                    SOFA
+                </h2>
+                <p><a href="./tabsofa.html">Xem thêm</a></p>
             </div>
             <div class="product-infor">
-              <span>
+                <span>
                 SOFA
-              </span> 
+                </span> 
             </div>
         </div>
         <div class="product-view product-2">
-          <img src="./img/kari-shea-AMyjxxLEHU4-unsplash.jpg" alt="">
-          <div class="product-see-more">
-            <h2 class="name-product">
-              Ghế
-            </h2>
-            <p><a href="#">Xem thêm</a></p> 
-          </div>
-          <div class="product-infor">
-            <span>
-              Ghế
-            </span> 
-          </div>
+            <img src="./img//IMAGE_CHAIR.jpeg" alt="">
+            <div class="product-see-more">
+                <h2 class="name-product">
+                    Ghế
+                </h2>
+                <p><a href="./tabghe.html">Xem thêm</a></p> 
+            </div>
+            <div class="product-infor">
+                <span>
+                Ghế
+                </span> 
+            </div>
         </div>
         <div class="product-view product-3">
-          <img src="./img/table-demo.jpg" alt="">
-          <div class="product-see-more">
-            <h2 class="name-product">
-              Bàn
-            </h2>
-            <p><a href="#">Xem thêm</a></p>
-          </div>
-          <div class="product-infor">
-            <span>
-              Bàn
-            </span> 
-          </div>
+            <img src="./img/IMAGE_TABLE.jpeg" alt="">
+            <div class="product-see-more">
+                <h2 class="name-product">
+                    Bàn
+                </h2>
+                <p><a href="./tabban.html">Xem thêm</a></p>
+            </div>
+            <div class="product-infor">
+                <span>
+                    Bàn
+                </span> 
+            </div>
         </div>
         <div class="product-view product-4">
-          <img src="./img/bed-demo.jpg" alt="">
-          <div class="product-see-more">
-            <h2 class="name-product">
-              Giường
-            </h2>
-            <p><a href="#">Xem thêm</a></p>
-          </div>
-          <div class="product-infor">
-            <span>
-              Giường
-            </span> 
-          </div>
+            <img src="./img/IMAGE_BED.jpeg" alt="">
+            <div class="product-see-more">
+                <h2 class="name-product">
+                    Giường
+                </h2>
+            <p><a href="./tabgiuong.html">Xem thêm</a></p>
+            </div>
+            <div class="product-infor">
+                <span>
+                    Giường
+                </span> 
+            </div>
         </div>
-      </div>
+    </div>
 
 
-      <div class="blog-single-1">
-          <div class="blog-container">
+    <div class="blog-single-1">
+        <div class="blog-container">
             <div class="blog-left">
                 <h4>Giới thiệu về</h4>
                 <h1>HTN Team</h1>
                 <p>Việc ra đời của <b>HTN Team</b> là cả quá trình đúc kết, tìm hiểu về đặc thù của từng loại không gian và các xu hướng sở thích khác nhau từ người sử dụng. Những nghiên cứu kỹ lưỡng đó được kết hợp khéo léo cùng tài năng của các nhà thiết kế nổi tiếng Châu Âu, tạo nên dòng sản phẩm trang trí, đồ nội thất đẹp có độ ứng dụng cao với nhiều loại hình không gian khác nhau. Gần gũi và ấm cúng cho nhà ở; cởi mở và thời trang cho khách sạn, năng động khi sử dụng cho văn phòng, phong thái từ các thiết kế của <b>HTN Team</b> luôn tạo được sức hút bởi tính đa chiều trong cảm xúc mà chúng mang lại cho không gian.</p>
                 <div class="sec-more efch-5 ef-tx-t">
-                  <a class="readmore" href="#">
-                      Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
-                  </a>
+                    <a class="readmore" href="#">
+                        Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
 
             <div class="blog-image">
                 <img src="https://aconcept-vn.com/storage/media/ZKhtw6rLLP8UWnTT90ihQE172RetZDB4tHbtVM7W.jpeg" alt="">
             </div>
-          </div>
-      </div>
+        </div>
+    </div>
 
-      <div class="register">
-          <div class="icon-email">
+    <div class="register">
+        <div class="icon-email">
             <img src="./img/gmail.svg" alt="Ảnh email">
-          </div>
-          <h1>Đăng ký để nhận ưu đãi hấp dẫn tại HTN</h1>
-          <div class="register-email">
+        </div>
+        <h1>Đăng ký để nhận ưu đãi hấp dẫn tại HTN</h1>
+        <div class="register-email">
             <input type="email" name="email" id="email" placeholder="email của bạn...">
             <a href="#">ĐĂNG KÝ</a>
-          </div>
-      </div>
+        </div>
+    </div>
 
-      <div class="footer">
+    <div class="footer">
         <div class="row1">
             <a href="#">Giới thiệu</a>
             <a href="#">Cửa hàng</a>

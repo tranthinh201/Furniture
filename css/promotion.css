@@ -1,19 +1,21 @@
 .product-promotion h1 {
     text-align: center;
     font-size: 28px;
-    font-weight: 100;
+    font-weight: 600;
+    margin-top: 40px;
 }
 
 .product-promotion {
     padding: 40px 0;
 }
 
-.search-bar {
+.search-bar-pro {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 160px;
 }
+
 
 .search-bar_nw {
     display: grid;
@@ -124,7 +126,7 @@
 }
 
 .product-promotion-infor-1:hover {
-    box-shadow: 0 2px 24px rgb(0 0 0 / 25%);
+    box-shadow: 0 4px 24px rgb(0 0 0 / 25%);
 }
 
 .product-promotion-infor-1:hover
@@ -163,7 +165,6 @@
     position: absolute;
     top: 30px;
     left: 70px;
-    box-shadow: 1px 1px 1px 1px rgb(214, 141, 141);
 }
 
 .sale-off img {
@@ -183,16 +184,51 @@
 
 .button-buy a {
     text-decoration: none;
-    color: black;
+    color: #40739e;
     font-weight: 500;
-    background-color: white;
     padding: 10px 20px;
+}
+
+.all-product {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 24px;
+    padding: 0 0 40px 0;
+    border-bottom: 1px solid rgb(153, 139, 139)
+}
+
+.all-product:last-child {
+    border: none;
+}
+
+.all-product span a {
+    text-decoration: none;
+    color: #353b48;
+    padding: 6px 12px;
+    border-radius: 2px;
+    border: 1px solid #353b48;
+}
+
+.all-product span a:hover {
+    color: #f1f1f1;
+    background: #353b48;
 }
 
 
 @media screen and (max-width: 416px) {
+    .product-promotion h1 {
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .search-bar-pro {
+        display: none;
+    }
+
     .product-promotion-infor-1 {
         width: 260px;
+        background-color: #dfe6e9;
     }
 
     .product-promotion-infor-1 .img img:hover{
@@ -227,7 +263,7 @@
         top: 40px;
         left: 40px;
     }
-     
+
     .sale-off img {
         height: 30px;
     }
@@ -239,7 +275,13 @@
     .button-buy a {
         padding: 5px 10px;
     }
-    
+
+    .all-product {
+        width: 200px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0 0 30px 0;
+    }
 }
 
 

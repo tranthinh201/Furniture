@@ -5,11 +5,12 @@
     outline: none !important;
     box-sizing: border-box;
     font-size: 16px; 
-    position: relative;
+     position: relative;
 }
 
 
 body {
+
     width: auto;
     font-size: 14px;
     font-weight: 300;
@@ -19,7 +20,21 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/*tạo animation*/
+@keyframes show {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
+
+/*lọc sản phẩm*/
 .filter
 {
     background-color: white;
@@ -30,6 +45,7 @@ body {
     margin-top: -30px;
     display:flex;
     border: 1px solid #C1C1C1;
+    
 }
 .drop-op
 {
@@ -79,20 +95,15 @@ body {
     text-align: center;
     color: black;
 }
-
-
-
-.main
-{
-    width: 100%;
-    height: auto;
-    margin: auto;
-    padding: 0px 30px;
+.icon2 img{
+    height: 30px;
+    width: 30px;
+    
 }
 
 /*ảnh banner*/
 .banner {
-    background-image: url("../img/tabsofa/anhheadersofa.png");
+    background-image: url("../img/tabtu/anhheadtu.jpeg");
     width: 100%;
     height: 360px;
     background-size: cover;
@@ -104,7 +115,6 @@ body {
     position: absolute; 
     top: 190px;
     left: 550px;
-    /* text-align: center; */
     text-transform: uppercase;
     font-size: 37px;
     color: white;
@@ -118,14 +128,17 @@ body {
     width: 100%;
     height: fit-content;
 }
-.list-sofa1 td {
+
+.list-ban1 td {
     text-align: center;
 }
-.list-sofa1 img
+
+.list-ban1 img
 {
     width: 50%;
     margin: auto;
     height: auto;
+
     /* border: none; */
     /* box-sizing: border-box; */
     overflow: hidden;
@@ -134,12 +147,13 @@ body {
     /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1); */
     will-change: transform;
     cursor: pointer;
+    
 }
-.list-sofa1 img:hover
+.list-ban1 img:hover
 {
     transform: translateY(-10px);
 }
-.list-sofa1 p
+.list-ban1 p
 {
     margin: 10px 0 0;
     display: flex;
@@ -149,18 +163,17 @@ body {
     /* color: #333; */
     cursor: pointer;
 }
-.list-sofa1 .price
+.list-ban1 .price
 {
     color: #6C6C6C;
     font-size: 15px;
-
 }
-.list-sofa1 .title
+.list-ban1 .title
 {
     margin-bottom: 0;
     font-size: 15px;
 }
-.namesf
+.nameban
 {
     color: inherit;
     margin-bottom: 20px;
@@ -169,11 +182,12 @@ body {
     line-height: 1.22857143;
     font-size: 25px;
 }
-.list-sofa1 .item
+.list-ban1 .item
 {
     margin-bottom: 30px;
     padding-top: 30px;
-}.main-icon
+}
+.main-icon
 {
     /* margin-left: 250px; */
     font-size: 20px;
@@ -187,29 +201,109 @@ body {
     margin-top: 10px;
     margin-left: 10px;
 }
- .main-icon a i {
-    color:black;
-    /* padding-left: 254px; */
-    font-size: 20px;
+.main-icon a i {
+    color: black;
 }
- .main-icon a i:hover {
+
+.main-icon a i:hover {
     color:pink;
 }
 
+
+/* ảnh và sp nổi bật */
+.head1 img:hover
+{
+    transform: translateY(-5px);
+}
+.head1 p
+{
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* font-family: sans-serif; */
+    /* color: #333; */
+    cursor: pointer;
+}
+.head1 .price
+{
+    color: #6C6C6C;
+    font-size: 15px;
+    margin-left: 850px;
+    margin-top: 10px;
+}
+.head1 .title
+{
+    margin-left: 850px;
+    margin-bottom: 0;
+}
+.main-icon1
+{
+    margin-left: 950px;
+    font-size: 20px;
+    position: relative;
+    top:80px;
+    position: absolute;
+}
+.main-icon1 a i
+{
+    color: black;
+}
+.main-icon1 a i:hover {
+    color:pink;
+}
+.head1 .nameban
+{
+    margin-left: 850px;
+}
+
+.container 
+{
+    display: flex;
+}
+
+.container  img {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1); */
+    cursor: pointer;
+}
+.img2
+{
+    margin-top: 250px;
+    width: 45%;
+    margin-left: 170px;
+}
+.img1
+{
+    width: 35%;
+    margin-left: 30px;
+    
+}
+.a1
+{
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
 .text-center
 {
     text-align: center;
 }
-.btn {
+
+/* nút xem thêm */
+.btn 
+{
     position: relative;
     vertical-align: middle;
     display: inline-block;
     text-align: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-decoration: none;
-    -o-transition: all 0.2s ease-in-out;
+    /* -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out; */
     overflow: hidden;
     font-weight: 500;
     font-size: 16px;
@@ -227,3 +321,4 @@ body {
     background-color: black;
     color: white;
 }
+

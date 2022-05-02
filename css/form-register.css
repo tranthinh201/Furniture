@@ -1,13 +1,20 @@
+.content h2{
+    padding-top: 120px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+}
+
 .form-register {
     display: flex;
-    padding: 160px;
+    padding: 40px;
     font-size: 20px;
     justify-content: center;
 }
 
 .form-register-2 {
-   border: 1px solid gray;
-   padding: 40px 60px;
+    border: 1px solid gray;
+    padding: 40px 60px;
 }
 
 .full-name, .gender__date, .phone-address {
@@ -50,8 +57,8 @@
 }
 
 .check-infor {
-   margin-top: 20px; 
-   font-size: 18px;
+    margin-top: 20px; 
+    font-size: 18px;
 }
 
 .check-infor .check-row1 {
@@ -98,5 +105,61 @@
 .social-register .social-register-facebook:hover,
 .social-register .social-register-google:hover{
     box-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
+}
+
+@media screen and (max-width: 416px) {
+
+    .content h2{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .form-register {
+        width: 100%;
+        font-size: 14px;
+        padding-top: 40px;
+    }
+    
+    .form-register-2 {
+        border: 1px solid gray;
+        padding: 30px 24px;
+    }
+
+    
+    .check-infor {
+        margin-top: 20px; 
+        font-size: 14px;
+    }
+  
+    .register,
+    .social-register-facebook,
+    .social-register-google {
+        font-size: 16px;
+    }
+    
+    .gender__date .gender input, select {
+        width: 100%;
+    }
+    .register a, 
+    .social-register .social-register-facebook a,
+    .social-register .social-register-google a {
+        font-size: 16px;
+    }
+    
+    .social-register {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2px;
+    }
+    
+    .social-register, .register {
+        text-align: center;
+    }
+    
+    .social-register .social-register-facebook, 
+    .social-register .social-register-google {
+        width: 50%;
+        margin: 16px 4px;
+    }
+
 }
 

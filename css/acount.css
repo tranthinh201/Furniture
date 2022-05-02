@@ -1,17 +1,25 @@
-
-.infor-user {
-    display: flex;
-    justify-content: center;
-    padding: 130px;
+.content {
+    text-align: center;
+    padding-top: 120px;
+    font-size: 28px;
+    font-weight: 900;
 }
 
-.infor-user > .form-login >.left-image img {
-    height: 620px;
+.infor-user {
+    margin: auto;
+    width: 1000px;
+    padding-top: 60px;
+}
+
+.form-login .left-image img {
+    height: 100%;
+    overflow: hidden;
 }
 
 .form-login {
     display: flex;
     border: 1px solid gray;
+    height: 620px;
 }
 
 .form-user-login {
@@ -20,7 +28,7 @@
     font-size: 20px;
     padding: 40px 70px;
     width: 512px;
-    height: 620px;
+    height: 100%;
 }
 .input-email, .input-password{
     display: grid;
@@ -43,12 +51,19 @@
 }
 
 .login {
-    text-decoration: none;
-    color: white;
     text-align: center;
+}
+
+.login button {
+    border: none;
     background-color: black;
-    padding: 10px;
+    color: white;
     cursor: context-menu;
+    padding: 5px 25px;
+}
+
+.login button:hover {
+    background: #b33939;
 }
 
 .forget-password {
@@ -56,10 +71,11 @@
     text-align: center;
     padding: 20px;
     cursor: context-menu;
+    border-bottom: 2px;
 }
 
-.forget-password:hover a{
-    color: red;
+.forget-password:hover{
+    color: #b33939;
 }
 
 
@@ -133,4 +149,43 @@
 
 
 
+@media screen and (max-width: 416px) {
+    .content {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .infor-user {
+        margin: auto;
+        width: auto;
+        padding: 60px 20px 0 20px;
+    }
+    
+    .form-login .left-image img {
+        display: none;
+    }
+    
+    .form-login {
+        display: flex;
+        border: 1px solid gray;
+        height: auto;
+    }
+    
+    .form-user-login {
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+    .forget-password {
+        padding: 18px;
+    }
+
+    
+    .create-account {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
 

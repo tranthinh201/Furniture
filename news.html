@@ -14,79 +14,164 @@
 <body>
     <div class="header__page">
         <div class="nav__logo">
-            <img src="./img/LOGO_TEAM_NEW.png" alt="Logo Team">
+            <a href="./index.html"><img src="./img/LOGO_TEAM_NEW.png" alt="Logo Team"></a>
         </div>
         <div class="nav__list-menu">
             <ul class="list-menu">
-                <li><a href="./index.html">Trang Chủ</a></li>
-                <li>
+                <li class="hv-bot"><a href="./index.html">Trang Chủ</a></li>
+                <li class="hv-bot">
                     <a href="#">Sản Phẩm</a>
                     <ul class="list-menu-drop">
                         <li>
                             <div>
-                                <a href="./news.html">Bàn</a>
+                                <a href="./tabban.html">Bàn</a>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <a href="./living-space.html">Giường</a>
+                                <a href="./tabghe.html">Ghế</a>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <a href="./promotion.html">Ghế</a>
+                                <a href="./tabsofa.html">SOFA</a>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <a href="./promotion.html">Tivi</a>
+                                <a href="./tabtu.html">Tủ</a>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <a href="./promotion.html">Tủ Lạnh</a>
+                                <a href="./tabgiuong.html">Giường</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="./tabdtt.html">Đồ trang trí</a>
                             </div>
                         </li>
                     </ul>
-                </li>
-                <li><a href="#">Catalogue</a></li>
-                <li>
-                    <a href="#">Tin Tức</a>
-                    <ul class="list-menu-drop">
-                        <li>
-                            <div>
-                                <a href="./news.html">Tin Tức</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="./living-space.html">Không Gian Sống</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="./promotion.html">Khuyến Mại</a>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="./contact.html">Liên Hệ</a></li>
+                    </li>
+                    <li class="hv-bot"><a href="#">Catalogue</a></li>
+                    <li class="hv-bot"><a href="./tabduan.html">Dự án</a></li>
+                    <li class="hv-bot">
+                        <a href="#" id="underline">Tin Tức</a>
+                        <ul class="list-menu-drop">
+                            <li>
+                                <div>
+                                    <a href="./news.html">Tin Tức</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="./living-space.html">Không Gian Sống</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="./promotion.html">Khuyến Mại</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                <li class="hv-bot"><a href="./contact.html">Liên Hệ</a></li>
             </ul>
-            <div class="list-icon">
+        <div class="list-icon">
+            <div class="search-bar">
                 <a href="#"><i class="fas fa-search"></i></a>
-                <a href="./account.html"><i class="far fa-user"></i></a>
-                <a href="#"><i class="far fa-heart"></i></a>
-                <a href="#" class="shopping-cart-a">
-                    <i class="fas fa-shopping-cart"></i>
-                    <div class="shopping-cart">
-                        <p>Tổng:200.000VND</p>
-                        <button onclick="location.href='./cart.html'" type="button">Xem giỏ hàng</button>
-                    </div>
-                </a>
             </div>
+            <a href="./account.html"><i class="far fa-user"></i></a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="./cart.html" class="shopping-cart-a">
+                <i class="fas fa-shopping-cart"></i>
+                    <!-- <div class="square-up">
+                        <i class="far fa-caret-square-up"></i>
+                    </div> -->
+                <div class="shopping-cart">
+                    <p>Tổng:200.000VND</p>
+                    <button onclick="location.href='./cart.html'" type="button">Xem giỏ hàng</button>
+                </div>
+            </a>
+            <label for="check__hidden"></label>
+            <li>
+              <label for="check__hidden">
+                <i class="fas fa-bars menu-bar"></i>
+              </label>
+            </li>
         </div>
-        
     </div>
+
+    <input type="checkbox" name="" id="check__hidden">
+    <div class="sidebar">
+        <ul class="list-menu-mobile">
+        <li><a href="./index.html">Trang Chủ</a></li>
+        <li>
+            <a href="#">Sản Phẩm</a>
+            <label for="check_menu_nw" class="check_menu-drop"><i class="fas fa-chevron-down"></i></label>
+                <input type="checkbox" id="check_menu_nw">
+            <ul class="list-menu-drop-mobile">
+                <li>
+                    <div>
+                        <a href="./news.html">Bàn</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./living-space.html">Ghê</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./promotion.html">Sofa</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./promotion.html">Tủ</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./promotion.html">Giường</a>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="./promotion.html">Đồ tang trí</a>
+                    </div>
+                </li>
+            </ul>
+            </li>
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="./tabduan.html">Dự án</a></li>
+            <li>
+                <a href="#">Tin Tức</a>
+                <label for="check_menu" class="check_menu-drop"><i class="fas fa-chevron-down"></i></label>
+                <input type="checkbox" id="check_menu">
+                <ul class="list-menu-drop-mobile">
+                    <li>
+                        <div>
+                            <a href="./news.html">Tin Tức</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./living-space.html">Không Gian Sống</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="./promotion.html">Khuyến Mại</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./contact.html">Liên Hệ</a></li>
+        </ul>
+    </div>
+</div>
     
     <div class="banner">
         <div class="div-text">
@@ -94,11 +179,117 @@
         </div>
     </div>
 
+    <div class="content-news">
+        <h2>TIN TỨC HÀNG NGÀY VỀ SẢN PHẨM CỦA CHÚNG TÔI</h2>
+    </div>
+
     <div class="container">
-        <div class="container-first">
             <div class="container-row"">
                 <div class="link">
                     <a href="#">
+                        <img src="./img/TT_01.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="container-row1">
+                    <div class="date">
+                        <span>Tin tức</span>
+                        <span>22/05/2021</span>
+                    </div>
+                    <h2>Dịch vụ thiết kê 3D miễn phí tại HTN-Concept</h2>
+                    <p>
+                        Với tiêu chí nâng cao dịch vụ, trải nghiệm khách hàng, đội ngũ nhân viên tư vấn tại HTN-Concept sẵn sàng giúp khách hàng chọn lựa những sản phẩm phù hợp nhất với từng không gian nội thất khác nhau. Dịch vụ thiết kế 3D miễn phí giúp khách hàng hình dung cụ thể cách bố trí, phối hợp các sản phẩm trong không gian thực tế, làm cho việc ra quyết định dễ dàng hơn bao giờ hết.
+                    </p>
+    
+                    <div class="row1-link">
+                        <a class="readmore" href="#">
+                            <span>Xem thêm</span><i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-row">
+                <div class="link">
+                    <a href="#">
+                        <img src="./img/TT_02_new.jpg" alt="">
+                    </a>
+                </div>
+                <div class="container-row1">
+                    
+                    <div class="date">
+                        <span>Tin tức</span>
+                        <span>05/05/2021</span>
+                    </div>
+                    <h2>New Collection 2021</h2>
+                    <p>
+                        Với phương châm đồng hành cùng mọi người chăm chút cho tổ ấm, những gam màu tươi mới của bộ sưu tập 2020 sẽ giúp gia chủ kiến tạo không gian sống mới hiện đại, tiện nghi và đẹp đẽ để hưởng thụ cuộc sống ngay tại nhà cùng những người thân yêu.
+                    </p>
+    
+                    <div class="row1-link">
+                        <a class="readmore" href="#">
+                            <span>Xem thêm</span><i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-row">
+                <div class="link">
+                    <a href="#">
+                        <img src="./img/TT_03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="container-row1">
+                    
+                    <div class="date">
+                        <span>Tin tức</span>
+                        <span>12/04/2021</span>
+                    </div>
+                    <h2>Bày Trí Theo Căn Hộ</h2>
+                    <p>
+                        Được bài trí nội thất theo phong cách Bắc Âu tinh tế, căn hộ 2 phòng ngủ với diện tích 59 m² đạt được tính thẩm mỹ cao. Kết hợp giữa các yếu tố: màu trung tính chủ đạo, ánh sáng thiên nhiên từ balcon và chất liệu gỗ tạo nên một không gian sống mộc mạc, trang nhã nhưng không kém phần hiện đại và đầy đủ tiện nghi.
+                    </p>
+    
+                    <div class="row1-link">
+                        <a class="readmore" href="#">
+                            <span>Xem thêm</span><i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-row">
+                <div class="link">
+                    <a href="#">
+                        <img src="./img/TT_04.jpg" alt="">
+                    </a>
+                </div>
+                <div class="container-row1">
+                    
+                    <div class="date">
+                        <span>Tin tức</span>
+                        <span>23/05/2021</span>
+                    </div>
+                    <h2>Những mẫu sản phẩm đẹp</h2>
+                    <p>
+                        Không gian sống đẹp mang đến cảm giác thư thái nhẹ nhàng, phòng ăn ấn tượng giúp bữa
+                        cơm trọn vẹn, ấm áp và cũng là cách ta trân trọng bản thân, yêu thương những thành viên 
+                        trong gia đình. Mỗi cách kết hợp bàn và ghế ăn hợp lý sẽ biến nơi dùng bữa của gia đình 
+                        trở nên sống động, tràn đầy cảm hứng. Bài viết dưới đây sẽ gợi ý 3 cách kết hợp bàn ăn 
+                        thông minh Milano với những kiểu ghế tạo phong cách riêng biệt cho gia chủ!
+                    </p>
+    
+                    <div class="row1-link">
+                        <a class="readmore" href="#">
+                            <span>Xem thêm</span><i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-row">
+                <div class="link">
+                    <a href="#">
                         <img src="./img/row1.png" alt="">
                     </a>
                 </div>
@@ -106,7 +297,7 @@
                     
                     <div class="date">
                         <span>Tin tức</span>
-                        <p>12/12/2001</p>
+                        <span>19/12/2001</span>
                     </div>
                     <h2>Sáng tạo không gian bữa ăn theo cá tính gia chủ</h2>
                     <p>
@@ -135,7 +326,7 @@
                     
                     <div class="date">
                         <span>Tin tức</span>
-                        <p>12/12/2001</p>
+                        <span>12/12/2001</span>
                     </div>
                     <h2>Sáng tạo không gian bữa ăn theo cá tính gia chủ</h2>
                     <p>
@@ -153,123 +344,6 @@
                     </div>
                 </div>
             </div>
-    
-            <div class="container-row">
-                <div class="link">
-                    <a href="#">
-                        <img src="./img/row1.png" alt="">
-                    </a>
-                </div>
-                <div class="container-row1">
-                    
-                    <div class="date">
-                        <span>Tin tức</span>
-                        <p>12/12/2001</p>
-                    </div>
-                    <h2>Sáng tạo không gian bữa ăn theo cá tính gia chủ</h2>
-                    <p>
-                        Không gian sống đẹp mang đến cảm giác thư thái nhẹ nhàng, phòng ăn ấn tượng giúp bữa
-                        cơm trọn vẹn, ấm áp và cũng là cách ta trân trọng bản thân, yêu thương những thành viên 
-                        trong gia đình. Mỗi cách kết hợp bàn và ghế ăn hợp lý sẽ biến nơi dùng bữa của gia đình 
-                        trở nên sống động, tràn đầy cảm hứng. Bài viết dưới đây sẽ gợi ý 3 cách kết hợp bàn ăn 
-                        thông minh Milano với những kiểu ghế tạo phong cách riêng biệt cho gia chủ!
-                    </p>
-    
-                    <div class="row1-link">
-                        <a class="readmore" href="#">
-                            <span>Xem thêm</span><i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="container-row">
-                <div class="link">
-                    <a href="#">
-                        <img src="./img/row1.png" alt="">
-                    </a>
-                </div>
-                <div class="container-row1">
-                    
-                    <div class="date">
-                        <span>Tin tức</span>
-                        <p>12/12/2001</p>
-                    </div>
-                    <h2>Sáng tạo không gian bữa ăn theo cá tính gia chủ</h2>
-                    <p>
-                        Không gian sống đẹp mang đến cảm giác thư thái nhẹ nhàng, phòng ăn ấn tượng giúp bữa
-                        cơm trọn vẹn, ấm áp và cũng là cách ta trân trọng bản thân, yêu thương những thành viên 
-                        trong gia đình. Mỗi cách kết hợp bàn và ghế ăn hợp lý sẽ biến nơi dùng bữa của gia đình 
-                        trở nên sống động, tràn đầy cảm hứng. Bài viết dưới đây sẽ gợi ý 3 cách kết hợp bàn ăn 
-                        thông minh Milano với những kiểu ghế tạo phong cách riêng biệt cho gia chủ!
-                    </p>
-    
-                    <div class="row1-link">
-                        <a class="readmore" href="#">
-                            <span>Xem thêm</span><i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="container-row">
-                <div class="link">
-                    <a href="#">
-                        <img src="./img/row1.png" alt="">
-                    </a>
-                </div>
-                <div class="container-row1">
-                    
-                    <div class="date">
-                        <span>Tin tức</span>
-                        <p>12/12/2001</p>
-                    </div>
-                    <h2>Sáng tạo không gian bữa ăn theo cá tính gia chủ</h2>
-                    <p>
-                        Không gian sống đẹp mang đến cảm giác thư thái nhẹ nhàng, phòng ăn ấn tượng giúp bữa
-                        cơm trọn vẹn, ấm áp và cũng là cách ta trân trọng bản thân, yêu thương những thành viên 
-                        trong gia đình. Mỗi cách kết hợp bàn và ghế ăn hợp lý sẽ biến nơi dùng bữa của gia đình 
-                        trở nên sống động, tràn đầy cảm hứng. Bài viết dưới đây sẽ gợi ý 3 cách kết hợp bàn ăn 
-                        thông minh Milano với những kiểu ghế tạo phong cách riêng biệt cho gia chủ!
-                    </p>
-    
-                    <div class="row1-link">
-                        <a class="readmore" href="#">
-                            <span>Xem thêm</span><i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="container-row">
-                <div class="link">
-                    <a href="#">
-                        <img src="./img/row1.png" alt="">
-                    </a>
-                </div>
-                <div class="container-row1">
-                    
-                    <div class="date">
-                        <span>Tin tức</span>
-                        <p>12/12/2001</p>
-                    </div>
-                    <h2>Sáng tạo không gian bữa ăn theo cá tính gia chủ</h2>
-                    <p>
-                        Không gian sống đẹp mang đến cảm giác thư thái nhẹ nhàng, phòng ăn ấn tượng giúp bữa
-                        cơm trọn vẹn, ấm áp và cũng là cách ta trân trọng bản thân, yêu thương những thành viên 
-                        trong gia đình. Mỗi cách kết hợp bàn và ghế ăn hợp lý sẽ biến nơi dùng bữa của gia đình 
-                        trở nên sống động, tràn đầy cảm hứng. Bài viết dưới đây sẽ gợi ý 3 cách kết hợp bàn ăn 
-                        thông minh Milano với những kiểu ghế tạo phong cách riêng biệt cho gia chủ!
-                    </p>
-    
-                    <div class="row1-link">
-                        <a class="readmore" href="#">
-                            <span>Xem thêm</span><i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     
     <div class="footer">
@@ -283,17 +357,23 @@
             <a href="#">Chính sách bảo hành</a>
             <a href="#">Bảo hành điện tử</a>
             <a href="#">Hỏi đáp</a>
-            <a href="#">Tuyển dụng</a>
+            <a href="./contact.html">Liên hệ</a>
         </div>
 
         <div class="social">
             <a href="https://www.facebook.com/" class="social-face"><i class="fab fa-facebook-square"></i></a>
             <a href="https://www.instagram.com/" class="social-insta"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/watch?v=Zzn9-ATB9aU&ab_channel=Ho%C3%A0ngD%C5%A9ng" class="social-youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.youtube.com/" class="social-youtube"><i class="fab fa-youtube"></i></a>
         </div>
 
         <div class="copyright">
             <span>© HTN Team 2021</span> 
+        </div>
+
+        <div class="div-backtop">
+            <div class="backtop" id="backtop" onclick="goToTop()">
+                <i class="fas fa-angle-up"></i>
+            </div>
         </div>
     </div>
 </body>

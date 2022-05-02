@@ -47,7 +47,7 @@
 .email,
 .address,
 .product-qt,
-.text {
+.text-contact {
     display: grid;
     margin-bottom: 12px;
 }
